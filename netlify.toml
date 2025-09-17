@@ -1,0 +1,5 @@
+[build]
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20.17.0"  # Ensure this matches your local Node.js version
