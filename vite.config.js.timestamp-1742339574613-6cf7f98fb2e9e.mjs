@@ -3,6 +3,10 @@ import { defineConfig } from "file:///E:/coding/paid%20projects/gm%20foods%20adm
 import react from "file:///E:/coding/paid%20projects/gm%20foods%20admin%20panel/node_modules/@vitejs/plugin-react/dist/index.mjs";
 var vite_config_default = defineConfig({
   plugins: [react()],
+  build: {
+    sourcemap: true,
+    chunkSizeWarningLimit: 2000
+  },
   optimizeDeps: {
     include: [
       "prosemirror-model",
